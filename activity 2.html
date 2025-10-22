@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>-What time is it?</p>
+    <button onclick="myFunction()">Time</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        function myFunction() {
+        var greeting;
+        var time = new Date().getHours();
+        if (time < 10) {
+            greeting = "Good morning!";
+        }
+        else if ( time < 20) {
+            greeting = "Good afternoon!";
+        }
+        else {
+            greeting = "Good night!"
+        }
+        document.getElementById('hour').innerHTML = "Right now is " + time;
+        document.getElementById('greet').innerHTML = "-Ok then " + greeting;
+    }</script>
+
+    </scrpit>
+</body>
+</html>
